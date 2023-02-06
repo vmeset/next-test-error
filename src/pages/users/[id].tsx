@@ -13,7 +13,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     })
     return {
         paths,
-        fallback: true
+        fallback: false
     }
 }
 
@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps<{ user: IUser }> = async ({params}: 
 
     const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     const data: IUser = await response.json()
-    console.log(data)
+
     return {
         props: {
             user: data

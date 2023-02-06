@@ -5,7 +5,7 @@ export const Layout = ({ ...props }): JSX.Element => {
 		<>
             <nav>
                 <div>
-                    <Link href={'/burgers'}>Burgs</Link>
+                    <Link href={'/users'}>Users</Link>
                 </div>
                 <div>
                     <Link href={'/reviews'}>Rews</Link>
